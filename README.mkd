@@ -2,7 +2,7 @@ Neosnippet-snippets
 ===================
 
 The standard snippets repository for
-[neosnippet](https://github.com/Shougo/neosnippet.vim).
+[neosnippet](https://github.com/Shougo/neosnippet.vim), edited by me
 
 You can fork or send pull request.
 
