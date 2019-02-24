@@ -6,6 +6,13 @@ options word
 		${0:TARGET}
 	end
 
+# closure
+snippet fn
+abbr    (function()...end)
+    function()
+        ${1}
+    end
+
 snippet if
 options head
   if ${1:#:condition} then
@@ -26,10 +33,8 @@ options head
 
 snippet print_table
 options head
-abbr    for k, v in ipairs(table) do
-  for k, v in ipairs(${1:table}) do
-    print(k, v)
-  end
+abbr    for k, v in pairs(table) do
+  for k, v in pairs(${1:table}) do print(k, v) end
 
 snippet     print
 alias       p
