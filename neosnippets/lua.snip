@@ -1,10 +1,15 @@
 # lua's indent plugin doesn't work well partly with markers. Use hard-tab for some of this snippet.
+
+snippet uv
+abbr    local uv = require ...
+    local k,uv=pcall(require,"uv")if not k then uv=require"luv"end k=nil
+
 snippet func
 abbr    function name(args)...end
 options word
-	function ${1:#:function_name}(${2:#:argument})
-		${0:TARGET}
-	end
+    function ${1:#:function_name}(${2:#:argument})
+        ${0:TARGET}
+    end
 
 # closure
 snippet fn
