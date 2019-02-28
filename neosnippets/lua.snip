@@ -4,18 +4,15 @@ snippet uv
 abbr    local uv = require ...
     local k,uv=pcall(require,"uv")if not k then uv=require"luv"end k=nil
 
+snippet fn
+abbr function
+  function${0}
+
 snippet func
 abbr    function name(args)...end
 options word
     function ${1:#:function_name}(${2:#:argument})
         ${0:TARGET}
-    end
-
-# closure
-snippet fn
-abbr    (function()...end)
-    function()
-        ${1}
     end
 
 snippet if
