@@ -1,12 +1,17 @@
 # lua's indent plugin doesn't work well partly with markers. Use hard-tab for some of this snippet.
 
+snippet pp
+abbr for i,v in pairs ...
+  for i, v in pairs(${0}) do print(${0}) end
+  ${0}
+
 snippet uv
 abbr    local uv = require ...
     local k,uv=pcall(require,"uv")if not k then uv=require"luv"end k=nil
 
 snippet fn
 abbr function
-  function${0}
+  function ${0}
 
 snippet func
 abbr    function name(args)...end
