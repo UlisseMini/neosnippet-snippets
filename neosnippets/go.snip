@@ -1,5 +1,13 @@
 source go.vim
 
+snippet     httpfunc
+abbr        func ...() { ... }
+alias hf
+options     head
+  func(w http.ResponseWriter, r *http.Request) {
+    ${0}
+  }
+
 snippet     init
     func init() {
         ${0}
