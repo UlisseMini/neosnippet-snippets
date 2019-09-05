@@ -1,5 +1,11 @@
 # lua's indent plugin doesn't work well partly with markers. Use hard-tab for some of this snippet.
 
+snippet lf
+abbr local ... = function(...) ... end
+  local ${0} = function(${0})
+    ${0}
+  end
+
 snippet pp
 abbr for i,v in pairs ...
   for i, v in pairs(${0}) do print(${0}) end
